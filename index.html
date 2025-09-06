@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -70,43 +70,101 @@
   </div>
 
   <!-----------------------------About me--------------------------------------------->
-  <div id="about" class="w-full px-[12%] py-10">
-    <h4 class="text-center mb-2 text-lg">Introduction </h4>
-    <h2 class="text-center text-5xl">About me</h2>
+  <div id="about" class="w-full px-6 sm:px-12 lg:px-16 py-10 bg-gray-50 scroll-mt-20">
+    <h4 class="text-center text-lg mb-2 text-gray-600">Introduction</h4>
+    <h2 class="text-center text-4xl sm:text-5xl font-bold mb-10 text-gray-800">About Me</h2>
 
-    <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-      <div class="max-w-max mx-auto relative">
-        <img src="images/About-img.jpeg" class="w-50 h-160 sm:w-80 rounded-3xl max-w-none">
+    <div class="flex flex-col lg:flex-row items-center gap-10 max-w-6xl mx-auto">
+      <!-- Image Section -->
+      <div class="flex justify-center">
+        <img src="images/About-img.jpeg" alt="Debjit About Me" class="rounded-3xl w-64 h-auto object-cover shadow-lg">
       </div>
-      <div class="flex-1">
-        <p class="mb-10 max-w-2xl">
+
+      <!-- Content Section -->
+      <div class="flex-1 space-y-6">
+        <p class="text-gray-700 leading-relaxed">
           Hi, I’m a developer passionate about creating impactful applications. My journey started with Java, a language
           I truly enjoy working with, and I’m currently expanding my skills in Android development to bring ideas to
-          life on mobile platforms.I have a strong interest in backend development, where I love designing systems that are efficient, scalable,
-          and reliable. Problem-solving excites me, and I enjoy turning challenges into opportunities to learn and grow.
-          Beyond coding, I’m always eager to explore new technologies, improve my skills, and contribute to projects
-          that make a real difference.
+          life on mobile platforms. I have a strong interest in backend development, where I love designing systems that
+          are efficient, scalable, and reliable. Problem-solving excites me, and I enjoy turning challenges into
+          opportunities
+          to learn and grow. Beyond coding, I’m always eager to explore new technologies, improve my skills, and
+          contribute
+          to projects that make a real difference.
         </p>
-        <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-          <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff]
-          hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
-            <i class="fa-solid fa-code text-2xl mt-3"></i>
-            <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
-            <p class="text-gray-600 text-sm">Java, C++, C, Python, Kotlin, HTML5, CSS3, JavaScript</p>
-          </li>
-          <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff]
-          hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
-           <i class="fa-solid fa-tools text-2xl mt-3"></i>
-            <h3 class="my-4 font-semibold text-gray-700">Tools</h3>
-            <p class="text-gray-600 text-sm">Android Studio, Vs Code, Intellij Idea, MySQL</p>
-          </li>
-          <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff]
-          hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
-             <i class="fa-solid fa-graduation-cap text-2xl mt-3"></i>
-            <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Languages -->
+          <div
+            class="border border-gray-300 rounded-xl p-5 hover:bg-[#fcf4ff] hover:-translate-y-1 transition-transform duration-300 shadow-sm">
+            <div class="flex items-center mb-4">
+              <i class="fa-solid fa-code text-2xl text-purple-600"></i>
+              <h3 class="ml-2 text-lg font-semibold text-gray-700">Languages</h3>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <img src="images/C++_Logo.svg" alt="C++" class="w-10 h-10">
+              <img src="images/java-logo.svg" alt="Java" class="w-10 h-10">
+              <img src="images/python.svg" alt="Python" class="w-10 h-10">
+              <img src="images/c.svg" alt="C" class="w-10 h-10">
+              <img src="images/html5.svg" alt="HTML5" class="w-10 h-10">
+              <img src="images/css3.svg" alt="CSS3" class="w-10 h-10">
+              <img src="images/javascript.svg" alt="JavaScript" class="w-10 h-10">
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div
+            class="border border-gray-300 rounded-xl p-5 hover:bg-[#fcf4ff] hover:-translate-y-1 transition-transform duration-300 shadow-sm">
+            <div class="flex items-center mb-4">
+              <i class="fa-solid fa-tools text-2xl text-green-600"></i>
+              <h3 class="ml-2 text-lg font-semibold text-gray-700">Tools</h3>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <img src="images/android-studio.svg" alt="Android Studio" class="w-10 h-10">
+              <img src="images/intellij-idea.svg" alt="IntelliJ IDEA" class="w-10 h-10">
+              <img src="images/visual-studio-code-2019.svg" alt="VS Code" class="w-10 h-10">
+              <img src="images/logo-mysql.png" alt="MySQL" class="w-10 h-10">
+              <img src="images/git.svg" alt="Git" class="w-10 h-10">
+              <img src="images/github.svg" alt="GitHub" class="w-10 h-10">
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div
+            class="border border-gray-300 rounded-xl p-5 hover:bg-[#fcf4ff] hover:-translate-y-1 transition-transform duration-300 shadow-sm">
+            <div class="flex items-center mb-4">
+              <i class="fa-solid fa-graduation-cap text-2xl text-blue-600"></i>
+              <h3 class="ml-2 text-lg font-semibold text-gray-700">Education</h3>
+            </div>
             <p class="text-gray-600 text-sm">B.Tech in Computer Science</p>
-          </li>
-        </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------My Work---------------------------------------->
+  <div id="my_work" class="w-full px-[12%] py-10 scroll-mt-20">
+    <h4 class="text-center mb-2 text-lg">My Portfolio</h4>
+    <h2 class="text-center text-5xl">My Latest Works</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12"> Welcome to my Portfolio
+      Explore a collection of projects showcasing my expertise in app development and backend
+    </p>
+
+    <div class="grid grid-cols-4 my-10 gap-5">
+      <div
+        class="w-120 h-70 bg-[url('./images/project-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        <div
+          class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 transform -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+          <div>
+            <h2 class="font-semibold">FullStack Project</h2>
+            <p class="text-sm text-gray-700">PredictaCare is an AI-powered healthcare platform</p>
+          </div>
+          <div class="border rounded-full border-black w-9 aspect-square
+          flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300
+          transition">
+            <img src="images/send-icon.png" class="w-5">
+          </div>
+        </div>
       </div>
     </div>
   </div>
