@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Debjit's Portfolio</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/1630dc005c.js" crossorigin="anonymous"></script>
   <style type="text/tailwindcss">
     @theme {
         --color-clifford: #da373d;
@@ -55,10 +56,59 @@
   <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center
   justify-center gap-4">
     <img src="images/My_image.jpeg" class="rounded-full w-32">
-    <h3 class="flex item-center gap-2 text-xl md:text-2xl mb-3">Hi, I'm Debjit Saha <img src="images/hand-icon.png" class="w-6"></h3>
+    <h3 class="flex item-center gap-2 text-xl md:text-2xl mb-3">Hi, I'm Debjit Saha <img src="images/hand-icon.png"
+        class="w-6"></h3>
     <h1 class="text-3xl sm:text-6xl lg:text-[66px]">A passionate software developer from India.</h1>
     <p class="max-w-2xl mx-auto">I’m a Java enthusiast currently exploring Android development.
       Passionate about building robust backend systems and always eager to learn new technologies.</p>
+    <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+      <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20]
+      text-white flex items-center gap-2"> contact me <img src="images/right-arrow-white.png" class="w-4"></a>
+      <a href="resume/Debjit's_Resume.pdf" target="_blank" download class="px-10 py-3 border rounded-full border-gray-500
+      flex items-center gap-2 bg-white"> My Resume <img src="images/download-icon.png" class="w-4"></a>
+    </div>
+  </div>
+
+  <!-----------------------------About me--------------------------------------------->
+  <div id="about" class="w-full px-[12%] py-10">
+    <h4 class="text-center mb-2 text-lg">Introduction </h4>
+    <h2 class="text-center text-5xl">About me</h2>
+
+    <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+      <div class="max-w-max mx-auto relative">
+        <img src="images/About-img.jpeg" class="w-50 h-160 sm:w-80 rounded-3xl max-w-none">
+      </div>
+      <div class="flex-1">
+        <p class="mb-10 max-w-2xl">
+          Hi, I’m a developer passionate about creating impactful applications. My journey started with Java, a language
+          I truly enjoy working with, and I’m currently expanding my skills in Android development to bring ideas to
+          life on mobile platforms.I have a strong interest in backend development, where I love designing systems that are efficient, scalable,
+          and reliable. Problem-solving excites me, and I enjoy turning challenges into opportunities to learn and grow.
+          Beyond coding, I’m always eager to explore new technologies, improve my skills, and contribute to projects
+          that make a real difference.
+        </p>
+        <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+          <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff]
+          hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+            <i class="fa-solid fa-code text-2xl mt-3"></i>
+            <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+            <p class="text-gray-600 text-sm">Java, C++, C, Python, Kotlin, HTML5, CSS3, JavaScript</p>
+          </li>
+          <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff]
+          hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+           <i class="fa-solid fa-tools text-2xl mt-3"></i>
+            <h3 class="my-4 font-semibold text-gray-700">Tools</h3>
+            <p class="text-gray-600 text-sm">Android Studio, Vs Code, Intellij Idea, MySQL</p>
+          </li>
+          <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff]
+          hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+             <i class="fa-solid fa-graduation-cap text-2xl mt-3"></i>
+            <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+            <p class="text-gray-600 text-sm">B.Tech in Computer Science</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
   <script src="./script.js"></script>
 </body>
